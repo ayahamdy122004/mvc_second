@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "edit";
+}
+
+<h1>edit</h1>
+
+@model employee
+<form method="post" action="/employee/saveedit/@Model.id">
+<input type="hidden" name="id" value="@Model.id"/>
+    <div><label>name</label>
+        <input type="text" name="name" value="@Model?.name" class="form form-check " /></div>
+    <div>
+        <label>jobtitle</label>
+        <input type="text" name="jobtitle" value="@Model.jobtitle" class="form form-check />
+    </div>
+    <div>
+        <lable>salary</lable>
+        <input type="number" name="salary" value="@Model.salary" class="form form-check  />
+    </div>
+    <div>
+       <lable>address</lable>
+        <input type="text" name="address" value="@Model.address" class="form form-check  />
+    </div>
+   <div>
+        <label>submit</label>
+<input type="submit" value="save" class="btn btn-check">
+
+</div>>
+
+
+</form>

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "add";
+}
+
+<h1>add</h1>
+
+<form method="get" action="/department/saveadd">
+<div>
+    <lable>NAME</lable>
+    <input name="name"  value="@Model?.name" type="text" class="form form-control "/>
+</div>
+    <div>
+        <lable>mangerNAME</lable>
+        <input name="managernmae"value="@Model?.managername" type="text" class="form form-control " />
+    </div>
+    <div>
+        <lable>submit</lable>
+        <input value="create" type="submit" class="form form-control " />
+    </div>
+</form>
+
+<a href="/department/index">Back-To-List</a>
